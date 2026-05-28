@@ -2,7 +2,7 @@
 
 ## Version 0.0.12
 
-**Tag:** `v0.0.12` · **Current**
+**Tag:** `v0.0.12`
 
 ---
 
@@ -19,4 +19,4 @@
 - All HTML pages — footer copy + `#site-version`
 - `assets/site.js` — year and version (keep in sync with root `VERSION`)
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.13.md](./release-notes-v0.0.13.md).*

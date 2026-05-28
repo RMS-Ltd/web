@@ -2,7 +2,7 @@
 
 ## Version 0.0.0
 
-**Current release notes:** [release-notes-v0.0.12.md](../releases/release-notes-v0.0.12.md)  
+**Current release notes:** [release-notes-v0.0.13.md](../releases/release-notes-v0.0.13.md)  
 **Live site:** https://rms-ltd.github.io/web/  
 **Policy:** [versioning-policy-v0.0.0.md](../governance/versioning-policy-v0.0.0.md)
 
@@ -20,7 +20,8 @@
 
 | Version | Tag | Commit | Release notes | Summary |
 |---------|-----|--------|---------------|---------|
-| **0.0.12** | `v0.0.12` | *(this release)* | [release-notes-v0.0.12.md](../releases/release-notes-v0.0.12.md) | Footer copyright + site version |
+| **0.0.13** | `v0.0.13` | *(this release)* | [release-notes-v0.0.13.md](../releases/release-notes-v0.0.13.md) | Theme toggle visible (label + SVG) |
+| **0.0.12** | `v0.0.12` | `a8ed38f` | [release-notes-v0.0.12.md](../releases/release-notes-v0.0.12.md) | Footer copyright + site version |
 | **0.0.11** | `v0.0.11` | `b8a613f` | [release-notes-v0.0.11.md](../releases/release-notes-v0.0.11.md) | Light / dark mode |
 | **0.0.10** | `v0.0.10` | `7a59017` | [release-notes-v0.0.10.md](../releases/release-notes-v0.0.10.md) | Umbrella design ethos + visual refresh |
 | **0.0.9** | `v0.0.9` | — | [release-notes-v0.0.9.md](../releases/release-notes-v0.0.9.md) | Umbrella branding: arms vs product brands |

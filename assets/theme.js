@@ -25,6 +25,8 @@
     const isDark = theme === 'dark';
     btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    const label = btn.querySelector('.theme-toggle-label');
+    if (label) label.textContent = isDark ? 'Light' : 'Dark';
   }
 
   function syncMeta(theme) {
