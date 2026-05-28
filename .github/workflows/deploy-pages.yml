@@ -1,5 +1,6 @@
 name: Deploy GitHub Pages
 
+# Production deploy only — day-to-day work on `dev` (no deploy on push there).
 on:
   push:
     branches: [main]

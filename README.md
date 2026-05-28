@@ -9,11 +9,32 @@ Public cooperative landing page for **RMS Ltd.** — GitHub Pages.
 
 ---
 
+## Branches
+
+| Branch | Role |
+|--------|------|
+| **`dev`** | Day-to-day edits; push as often as you like — **no** GitHub Pages deploy |
+| **`main`** | Production; merge from `dev` after local testing; push (or merge) **triggers** Pages deploy |
+
+```bash
+git checkout dev
+# edit, preview locally, commit, push origin dev
+git checkout main
+git merge dev
+# bump VERSION, release notes, tag v0.0.x
+git push origin main
+git push origin v0.0.x
+```
+
+Optional: set **default branch** to `dev` in GitHub **Settings → General** so new clones start on `dev`.
+
+---
+
 ## SemVer workflow
 
-1. Edit site files in this repo (`index.html`, `ethos.html`, `projects.html`, `people.html`, `styles.css`, `assets/`). Bump root `VERSION` and `SITE_VERSION` in `assets/site.js` together.
-2. Copy-then-edit next `docs/releases/release-notes-v0.0.x.md`; update [VERSION](./VERSION) and [release-register](docs/planning/release-register-v0.0.0.md).
-3. Commit on `main`; tag `v0.0.x`; push branch and tags.
+1. Work on **`dev`**. Edit site files; bump root `VERSION` and `SITE_VERSION` in `assets/site.js` together when preparing a release.
+2. Copy-then-edit next `docs/releases/release-notes-v0.0.x.md`; update [release-register](docs/planning/release-register-v0.0.0.md).
+3. Merge to **`main`** when locally stable; tag `v0.0.x`; push `main` and tags (deploy runs once).
 
 | Increment | When |
 |-----------|------|
@@ -41,4 +62,4 @@ Open http://localhost:8080
 
 ## Deploy
 
-Push to `main` runs [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml).
+Push to **`main`** only runs [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Pushes to **`dev`** do not.
