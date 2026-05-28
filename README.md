@@ -3,7 +3,7 @@
 Public cooperative landing page for **RMS Ltd.** — GitHub Pages.
 
 **Live:** https://rms-ltd.github.io/web/  
-**Current version:** `0.0.14` ([VERSION](./VERSION)) — see [docs/planning/CURRENT_RELEASE.md](docs/planning/CURRENT_RELEASE.md)
+**Current version:** `0.0.15` ([VERSION](./VERSION)) — see [docs/planning/CURRENT_RELEASE.md](docs/planning/CURRENT_RELEASE.md)
 
 **Source of truth:** this repo ([RMS-Ltd/web](https://github.com/RMS-Ltd/web)). Planning canon stays in private [RMS-Ltd/enterprise](https://github.com/RMS-Ltd/enterprise); the public site is edited here only.
 

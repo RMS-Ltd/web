@@ -2,7 +2,7 @@
 
 ## Version 0.0.14
 
-**Tag:** `v0.0.14` · **Current**
+**Tag:** `v0.0.14`
 
 ---
 
@@ -12,4 +12,4 @@
 |--------|--------|
 | **PATCH** | Fix theme toggle: ES5 script, `html[data-theme]` CSS, transitions, onclick fallback. |
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.15.md](./release-notes-v0.0.15.md).*
