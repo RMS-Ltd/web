@@ -10,7 +10,13 @@
 
 | Change | Detail |
 |--------|--------|
-| **MINOR** | Formation milestone — public umbrella site stable for now (multi-page, ethos, governance, `dev`/`main` workflow). |
+| **MINOR** | First version we would not be embarrassed if someone stumbled across — umbrella site good enough to leave public while we keep building. |
+
+---
+
+## Bar for 0.1.0
+
+Not trading, not soliciting, not finished — but **coherent, honest, and presentable**: company-first copy, clear structure, accessible themes, no broken toggles, no cringe factor if a stranger finds the URL.
 
 ---
 
