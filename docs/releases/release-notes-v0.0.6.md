@@ -2,7 +2,7 @@
 
 ## Version 0.0.6
 
-**Tag:** `v0.0.6` · **Current**
+**Tag:** `v0.0.6`
 
 ---
 
@@ -19,4 +19,4 @@
 - `index.html` — structure, meta, connect (Company Page first)
 - `styles.css` — `.subtitle`
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.7.md](./release-notes-v0.0.7.md).*
