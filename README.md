@@ -3,18 +3,17 @@
 Public cooperative landing page for **RMS Ltd.** — GitHub Pages.
 
 **Live:** https://rms-ltd.github.io/web/  
-**Current version:** `0.0.7` ([VERSION](./VERSION)) — see [docs/planning/CURRENT_RELEASE.md](docs/planning/CURRENT_RELEASE.md)
+**Current version:** `0.0.10` ([VERSION](./VERSION)) — see [docs/planning/CURRENT_RELEASE.md](docs/planning/CURRENT_RELEASE.md)
 
-**Source of truth (private):** [RMS-Ltd/enterprise](https://github.com/RMS-Ltd/enterprise) → `site/` — sync HTML/CSS here, then bump VERSION and release notes per [docs/governance/versioning-policy-v0.0.0.md](docs/governance/versioning-policy-v0.0.0.md).
+**Source of truth:** this repo ([RMS-Ltd/web](https://github.com/RMS-Ltd/web)). Planning canon stays in private [RMS-Ltd/enterprise](https://github.com/RMS-Ltd/enterprise); the public site is edited here only.
 
 ---
 
 ## SemVer workflow
 
-1. Edit landing in **enterprise** `site/` (or here if urgent).
-2. Sync to **web** root (`index.html`, `styles.css`, `assets/`).
-3. Copy-then-edit next `docs/releases/release-notes-v0.0.x.md`; update [VERSION](./VERSION) and [release-register](docs/planning/release-register-v0.0.0.md).
-4. Commit on `main`; tag `v0.0.x`; push branch and tags.
+1. Edit site files in this repo (`index.html`, `ethos.html`, `projects.html`, `people.html`, `styles.css`, `assets/`).
+2. Copy-then-edit next `docs/releases/release-notes-v0.0.x.md`; update [VERSION](./VERSION) and [release-register](docs/planning/release-register-v0.0.0.md).
+3. Commit on `main`; tag `v0.0.x`; push branch and tags.
 
 | Increment | When |
 |-----------|------|

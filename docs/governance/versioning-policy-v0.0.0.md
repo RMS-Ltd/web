@@ -62,7 +62,7 @@
 
 ## 5) Source sync
 
-HTML/CSS **source of truth** for copy changes: `RMS-Ltd/enterprise` → `site/`. After editing there, sync to **web** `main`, then bump VERSION + release notes + tag. See [README.md](../../README.md).
+HTML/CSS **source of truth**: this repo (`index.html`, `ethos.html`, `projects.html`, `people.html`, `styles.css`, `assets/`). Edit here, then bump VERSION + release notes + tag. See [README.md](../../README.md).
 
 ---
 

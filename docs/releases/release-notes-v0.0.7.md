@@ -2,7 +2,7 @@
 
 ## Version 0.0.7
 
-**Tag:** `v0.0.7` · **Current**
+**Tag:** `v0.0.7`
 
 ---
 
@@ -12,4 +12,4 @@
 |--------|--------|
 | **PATCH** | Removed Connect section — site does not solicit connections. |
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.8.md](./release-notes-v0.0.8.md).*
