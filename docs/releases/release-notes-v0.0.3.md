@@ -2,7 +2,7 @@
 
 ## Version 0.0.3
 
-**Tag:** `v0.0.3` · **Current**
+**Tag:** `v0.0.3`
 
 ---
 
@@ -18,4 +18,4 @@
 
 - `index.html` — no named charity; “refugee and disadvantaged communities”
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.4.md](./release-notes-v0.0.4.md).*
