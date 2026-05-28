@@ -16,6 +16,8 @@ Public cooperative landing page for **RMS Ltd.** — GitHub Pages.
 | **`dev`** | Day-to-day edits; push as often as you like — **no** GitHub Pages deploy |
 | **`main`** | Production; merge from `dev` after local testing; push (or merge) **triggers** Pages deploy |
 
+**Policy:** [docs/governance/branch-and-deploy-policy-v0.0.0.md](docs/governance/branch-and-deploy-policy-v0.0.0.md) · **Agents:** [docs/AGENTS.md](docs/AGENTS.md)
+
 ```bash
 git checkout dev
 # edit, preview locally, commit, push origin dev

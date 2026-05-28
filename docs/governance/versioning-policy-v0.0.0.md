@@ -43,10 +43,10 @@
 2. Copy `release-notes-v0.0.x.md` → new filename; edit **new file only**.
 3. Update [VERSION](../../VERSION) and [CURRENT_RELEASE.md](../planning/CURRENT_RELEASE.md).
 4. PATCH bump [release-register](../planning/release-register-v0.0.0.md) changelog (or copy register if MINOR).
-5. Commit; tag `v0.0.x` on the release commit.
-6. Push; GitHub Pages deploys from `main`.
+5. Merge **`dev` → `main`** when locally stable (see [branch-and-deploy-policy-v0.0.0.md](./branch-and-deploy-policy-v0.0.0.md)).
+6. Commit on **`main`**; tag `v0.0.x` on the release commit; push `main` and tags — GitHub Pages deploys **once**.
 
-**Site files** (`index.html`, etc.) are edited in place on `main` — the **git tag** and **release notes** record the SemVer snapshot.
+**Site files** are developed on **`dev`**; production snapshot is recorded by **git tag** and **release notes** on `main`.
 
 ---
 
@@ -56,7 +56,9 @@
 |------|------|
 | `README.md` | Repo entry |
 | `docs/planning/CURRENT_RELEASE.md` | Pointer to current register |
-| `.github/workflows/deploy-pages.yml` | Deploy mechanics |
+| `.github/workflows/deploy-pages.yml` | Deploy mechanics (`main` only) |
+| `docs/AGENTS.md` | Agent bootstrap |
+| `AGENTS.md` | Pointer to `docs/AGENTS.md` |
 
 ---
 

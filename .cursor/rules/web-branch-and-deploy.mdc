@@ -1,0 +1,26 @@
+---
+description: RMS web repo — dev branch for work, main for production deploy only
+alwaysApply: true
+---
+
+# web — branch and deploy
+
+This repo is **RMS-Ltd/web** (GitHub Pages). Follow [docs/governance/branch-and-deploy-policy-v0.0.0.md](docs/governance/branch-and-deploy-policy-v0.0.0.md) and [docs/AGENTS.md](docs/AGENTS.md).
+
+## Required behaviour
+
+- **Edit and push on `dev`** for routine site changes — pushes to `dev` do **not** deploy Pages.
+- **Merge to `main` only** after local preview (`python3 -m http.server 8080`) and user confirmation that the build is stable.
+- **One production deploy per release:** push/tag on `main`, not after every commit.
+- **Do not** push to `main` or create production tags unless the user asks for a release/merge.
+- **Do not** widen [deploy-pages.yml](.github/workflows/deploy-pages.yml) beyond `main` without a policy update.
+
+## Release checklist (main)
+
+1. Merge `dev` → `main`
+2. Bump `VERSION` + `assets/site.js` `SITE_VERSION`
+3. Copy-then-edit release notes; update release register
+4. Tag `v0.0.x`; push `main` and tag
+5. Merge `main` back into `dev`
+
+Skill: `.cursor/skills/web-dev-branch-workflow/SKILL.md`
