@@ -2,7 +2,7 @@
 
 ## Version 0.0.15
 
-**Tag:** `v0.0.15` · **Current**
+**Tag:** `v0.0.15`
 
 ---
 
@@ -12,4 +12,4 @@
 |--------|--------|
 | **PATCH** | Footer: single meta line with copyright, location, version. |
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.17.md](./release-notes-v0.0.17.md).*

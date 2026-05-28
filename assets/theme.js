@@ -1,24 +1,30 @@
-/* Theme toggle — ES5 for broad browser support */
+/* Theme toggle — ES5; dark default; single click handler */
 (function (window, document) {
   var STORAGE_KEY = 'rms-theme';
   var root = document.documentElement;
+  var DEFAULT_THEME = 'dark';
 
-  function systemTheme() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
+  function readStoredTheme() {
+    try {
+      var s = localStorage.getItem(STORAGE_KEY);
+      if (s === 'light' || s === 'dark') return s;
+    } catch (e) { /* Safari private mode, etc. */ }
+    return null;
   }
 
   function getTheme() {
     var t = root.getAttribute('data-theme');
-    return t === 'dark' || t === 'light' ? t : systemTheme();
+    if (t === 'dark' || t === 'light') return t;
+    var stored = readStoredTheme();
+    return stored || DEFAULT_THEME;
   }
 
   function applyTheme(theme) {
+    if (theme !== 'light' && theme !== 'dark') theme = DEFAULT_THEME;
     root.setAttribute('data-theme', theme);
     try {
       localStorage.setItem(STORAGE_KEY, theme);
-    } catch (e) { /* private mode */ }
+    } catch (e) { /* session-only preference */ }
     syncToggle(theme);
     syncMeta(theme);
   }
@@ -48,39 +54,23 @@
     var btn = document.getElementById('theme-toggle');
     if (!btn || btn.getAttribute('data-bound') === 'true') return;
     btn.setAttribute('data-bound', 'true');
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
+
+    function onActivate(e) {
+      if (e.type === 'click' && e.button !== 0) return;
+      if (e.cancelable) e.preventDefault();
       toggleTheme();
-    });
+    }
+
+    btn.addEventListener('click', onActivate);
   }
 
   function init() {
+    var theme = readStoredTheme() || DEFAULT_THEME;
+    applyTheme(theme);
     bindToggle();
-    syncToggle(getTheme());
-    syncMeta(getTheme());
-
-    if (window.matchMedia) {
-      var mq = window.matchMedia('(prefers-color-scheme: dark)');
-      var onChange = function (e) {
-        try {
-          if (!localStorage.getItem(STORAGE_KEY)) {
-            applyTheme(e.matches ? 'dark' : 'light');
-          }
-        } catch (err) { /* ignore */ }
-      };
-      if (mq.addEventListener) {
-        mq.addEventListener('change', onChange);
-      } else if (mq.addListener) {
-        mq.addListener(onChange);
-      }
-    }
   }
 
   window.RMS_toggleTheme = toggleTheme;
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  init();
 })(window, document);

@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <script>
     (function () {
-      var k = 'rms-theme';
+      var k = 'rms-theme', t = 'dark';
       try {
         var s = localStorage.getItem(k);
-        var t = s || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', t);
+        if (s === 'light' || s === 'dark') t = s;
       } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
   <meta property="og:description" content="Who is building RMS Ltd. today — founder-led, hiring via progressive social initiatives when we grow.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rms-ltd.github.io/web/people.html">
-  <meta name="theme-color" content="#0c3d3a">
+  <meta name="theme-color" content="#0f1413">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,10 +40,10 @@
             <li><a href="people.html" aria-current="page">People</a></li>
           </ul>
         </nav>
-        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" onclick="window.RMS_toggleTheme && window.RMS_toggleTheme(); return false;">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" aria-pressed="true">
           <svg class="theme-icon theme-icon-light" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="theme-icon theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <span class="theme-toggle-label">Dark</span>
+          <span class="theme-toggle-label">Light</span>
         </button>
       </div>
     </div>
@@ -74,7 +74,7 @@
     <p class="footer-meta">© <span id="year"></span> RMS Ltd. All rights reserved. · South West UK · <span id="site-version"></span></p>
   </footer>
 
-  <script src="assets/theme.js" defer></script>
-  <script src="assets/site.js" defer></script>
+  <script src="assets/theme.js"></script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
