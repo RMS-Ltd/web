@@ -2,7 +2,7 @@
 
 ## Version 0.0.18
 
-**Tag:** `v0.0.18` · **Current**
+**Tag:** `v0.0.18`
 
 ---
 
@@ -22,4 +22,4 @@
 - `.cursor/skills/web-dev-branch-workflow/`, `.cursor/rules/web-branch-and-deploy.mdc`
 - `README.md`, `docs/README.md`, `docs/governance/versioning-policy-v0.0.0.md`
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.1.0.md](./release-notes-v0.1.0.md).*

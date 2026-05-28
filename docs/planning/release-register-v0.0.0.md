@@ -2,7 +2,7 @@
 
 ## Version 0.0.0
 
-**Current release notes:** [release-notes-v0.0.18.md](../releases/release-notes-v0.0.18.md)  
+**Current release notes:** [release-notes-v0.1.0.md](../releases/release-notes-v0.1.0.md)  
 **Live site:** https://rms-ltd.github.io/web/  
 **Policy:** [versioning-policy-v0.0.0.md](../governance/versioning-policy-v0.0.0.md)
 
@@ -13,6 +13,7 @@
 | Change | Detail |
 |--------|--------|
 | **INIT** | Register + releases v0.0.0–v0.0.2; SemVer tags on repo. |
+| **0.1.0** | Formation milestone tag on register. |
 
 ---
 
@@ -20,7 +21,8 @@
 
 | Version | Tag | Commit | Release notes | Summary |
 |---------|-----|--------|---------------|---------|
-| **0.0.18** | `v0.0.18` | *(this release)* | [release-notes-v0.0.18.md](../releases/release-notes-v0.0.18.md) | Dev branch governance; Projects LOC under Dev |
+| **0.1.0** | `v0.1.0` | *(this release)* | [release-notes-v0.1.0.md](../releases/release-notes-v0.1.0.md) | Formation milestone — site stable for now |
+| **0.0.18** | `v0.0.18` | `cf8a6f4` | [release-notes-v0.0.18.md](../releases/release-notes-v0.0.18.md) | Dev branch governance; Projects LOC under Dev |
 | **0.0.17** | `v0.0.17` | `08d3d61` | [release-notes-v0.0.17.md](../releases/release-notes-v0.0.17.md) | Dark default; theme toggle fix; Compute USP |
 | **0.0.16** | — | — | [release-notes-v0.0.16.md](../releases/release-notes-v0.0.16.md) | (bundled in v0.0.17) |
 | **0.0.15** | `v0.0.15` | `f4b1c9e` | [release-notes-v0.0.15.md](../releases/release-notes-v0.0.15.md) | Footer single copyright line |
