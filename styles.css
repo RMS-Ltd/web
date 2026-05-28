@@ -510,13 +510,26 @@ a:focus-visible {
 }
 
 .site-footer p {
-  margin: 0.25rem 0;
+  margin: 0.35rem 0;
 }
 
 .tagline {
-  margin-top: 0.5rem;
+  margin: 0 0 0.5rem;
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--accent);
   letter-spacing: 0.02em;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+}
+
+.footer-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+#site-version {
+  font-variant-numeric: tabular-nums;
 }

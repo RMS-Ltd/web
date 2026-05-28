@@ -2,7 +2,7 @@
 
 ## Version 0.0.11
 
-**Tag:** `v0.0.11` · **Current**
+**Tag:** `v0.0.11`
 
 ---
 
@@ -20,4 +20,4 @@
 - `assets/theme.js` — toggle, persistence, `theme-color` meta
 - All HTML pages — early theme init (no flash), toggle in header
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.12.md](./release-notes-v0.0.12.md).*
