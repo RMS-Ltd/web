@@ -2,6 +2,16 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      var k = 'rms-theme';
+      try {
+        var s = localStorage.getItem(k);
+        var t = s || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RMS Ltd. — worker-owned tech cooperative in formation</title>
   <meta name="description" content="RMS Ltd. (Ruari Mears Solutions) — corporate umbrella for a worker-owned tech cooperative in formation. Not trading yet.">
@@ -19,15 +29,20 @@
 
   <header class="site-header">
     <p class="eyebrow">South West UK · incorporated · not trading</p>
-    <p class="site-brand"><a href="index.html">RMS Ltd.</a></p>
-    <nav class="site-nav" aria-label="Site">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="ethos.html">Ethos</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="people.html">People</a></li>
-      </ul>
-    </nav>
+    <div class="header-bar">
+      <p class="site-brand"><a href="index.html">RMS Ltd.</a></p>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Site">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="ethos.html">Ethos</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="people.html">People</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode"></button>
+      </div>
+    </div>
     <h1>Worker-owned tech cooperative in formation</h1>
     <p class="subtitle">Ruari Mears Solutions</p>
     <p class="lede">RMS Ltd. is the umbrella for a worker-owned tech cooperative — <strong>laid-back and modern</strong>, <strong>progressive</strong>, <strong>socially and environmentally aware</strong>, and <strong>high-tech</strong> underneath. Work runs through <strong>RMS Dev</strong> and <strong>RMS Compute</strong>; each product brand gets its own look when it launches.</p>
@@ -72,6 +87,7 @@
     <p class="tagline">Modern tech. Owned together.</p>
   </footer>
 
+  <script src="assets/theme.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>

@@ -2,7 +2,7 @@
 
 ## Version 0.0.10
 
-**Tag:** `v0.0.10` · **Current**
+**Tag:** `v0.0.10`
 
 ---
 
@@ -21,4 +21,4 @@
 - `styles.css` — laid-back modern umbrella visual language
 - All pages — footer tagline
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.11.md](./release-notes-v0.0.11.md).*

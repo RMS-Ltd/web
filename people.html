@@ -2,6 +2,16 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      var k = 'rms-theme';
+      try {
+        var s = localStorage.getItem(k);
+        var t = s || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>People — RMS Ltd.</title>
   <meta name="description" content="Founder and team at RMS Ltd. — Ruari Mears and the cooperative we are building toward.">
@@ -19,15 +29,20 @@
 
   <header class="site-header">
     <p class="eyebrow">South West UK · incorporated · not trading</p>
-    <p class="site-brand"><a href="index.html">RMS Ltd.</a></p>
-    <nav class="site-nav" aria-label="Site">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ethos.html">Ethos</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="people.html" aria-current="page">People</a></li>
-      </ul>
-    </nav>
+    <div class="header-bar">
+      <p class="site-brand"><a href="index.html">RMS Ltd.</a></p>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Site">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ethos.html">Ethos</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="people.html" aria-current="page">People</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode"></button>
+      </div>
+    </div>
     <h1>People</h1>
     <p class="lede">Who is involved today — and how personal work stays separate from the company trade.</p>
   </header>
@@ -55,6 +70,7 @@
     <p class="tagline">Modern tech. Owned together.</p>
   </footer>
 
+  <script src="assets/theme.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>

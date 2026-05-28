@@ -2,7 +2,7 @@
 
 ## Version 0.0.0
 
-**Current release notes:** [release-notes-v0.0.10.md](../releases/release-notes-v0.0.10.md)  
+**Current release notes:** [release-notes-v0.0.11.md](../releases/release-notes-v0.0.11.md)  
 **Live site:** https://rms-ltd.github.io/web/  
 **Policy:** [versioning-policy-v0.0.0.md](../governance/versioning-policy-v0.0.0.md)
 
@@ -20,7 +20,8 @@
 
 | Version | Tag | Commit | Release notes | Summary |
 |---------|-----|--------|---------------|---------|
-| **0.0.10** | `v0.0.10` | *(this release)* | [release-notes-v0.0.10.md](../releases/release-notes-v0.0.10.md) | Umbrella design ethos + visual refresh |
+| **0.0.11** | `v0.0.11` | *(this release)* | [release-notes-v0.0.11.md](../releases/release-notes-v0.0.11.md) | Light / dark mode |
+| **0.0.10** | `v0.0.10` | `7a59017` | [release-notes-v0.0.10.md](../releases/release-notes-v0.0.10.md) | Umbrella design ethos + visual refresh |
 | **0.0.9** | `v0.0.9` | — | [release-notes-v0.0.9.md](../releases/release-notes-v0.0.9.md) | Umbrella branding: arms vs product brands |
 | **0.0.8** | `v0.0.8` | — | [release-notes-v0.0.8.md](../releases/release-notes-v0.0.8.md) | Multi-page: Home, Ethos, Projects, People |
 | **0.0.7** | `v0.0.7` | — | [release-notes-v0.0.7.md](../releases/release-notes-v0.0.7.md) | No Connect / solicitation on site |
@@ -46,5 +47,6 @@
 | `people.html` | Founder and team |
 | `styles.css` | Styles |
 | `assets/favicon.svg` | Favicon |
+| `assets/theme.js` | Theme toggle |
 
 *Register v0.0.0 · [CURRENT_RELEASE.md](./CURRENT_RELEASE.md)*
