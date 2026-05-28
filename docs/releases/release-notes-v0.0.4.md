@@ -2,7 +2,7 @@
 
 ## Version 0.0.4
 
-**Tag:** `v0.0.4` · **Current**
+**Tag:** `v0.0.4`
 
 ---
 
@@ -18,4 +18,4 @@
 
 - `index.html` — Who we hire section
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.5.md](./release-notes-v0.0.5.md).*
