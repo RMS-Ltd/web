@@ -1,0 +1,259 @@
+/* Dyslexia-friendly: high contrast, left-aligned, generous spacing, sans-serif */
+
+:root {
+  --bg: #f6f3ed;
+  --surface: #ffffff;
+  --ink: #14201e;
+  --muted: #3d4f4c;
+  --accent: #c45c26;
+  --accent-soft: #e8d4c8;
+  --teal: #0c3d3a;
+  --teal-soft: #d4e8e6;
+  --border: #c8d4d2;
+  --focus: #0a6b64;
+  --max: 42rem;
+  --space: 1.25rem;
+  font-size: 112.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 100% 0%, var(--teal-soft) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 0% 100%, var(--accent-soft) 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: var(--teal);
+  color: #fff;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 2rem);
+}
+
+.site-header {
+  padding-top: clamp(2.5rem, 8vw, 4rem);
+  padding-bottom: var(--space);
+  border-bottom: 3px solid var(--teal);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--teal);
+}
+
+.lede {
+  margin: 0;
+  font-size: 1.15rem;
+  max-width: 38em;
+}
+
+.panel {
+  margin-block: clamp(2rem, 5vw, 3rem);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(12, 61, 58, 0.06);
+}
+
+.panel h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  color: var(--teal);
+}
+
+.panel h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.dream blockquote {
+  margin: 0 0 1rem;
+  padding: 0 0 0 1rem;
+  border-left: 4px solid var(--accent);
+}
+
+.dream blockquote p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.note,
+.arms,
+.stat {
+  margin: 0;
+  color: var(--muted);
+}
+
+.stat {
+  margin-bottom: 1.25rem;
+}
+
+.product-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 520px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product-grid li {
+  padding: 1rem;
+  background: var(--bg);
+  border-radius: 4px;
+}
+
+.product-grid p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.arms {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.hiring a {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.link-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.link-list li {
+  margin-bottom: 0.5rem;
+}
+
+.link-list a {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.ask {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.social-nav {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 400px) {
+  .social-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.social-card:hover {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.social-card.primary {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.social-card .label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.social-card .handle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.site-footer {
+  padding-block: 2rem 3rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--teal);
+}
