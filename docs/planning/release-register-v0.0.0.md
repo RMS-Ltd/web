@@ -2,7 +2,7 @@
 
 ## Version 0.0.0
 
-**Current release notes:** [release-notes-v0.0.5.md](../releases/release-notes-v0.0.5.md)  
+**Current release notes:** [release-notes-v0.0.6.md](../releases/release-notes-v0.0.6.md)  
 **Live site:** https://rms-ltd.github.io/web/  
 **Policy:** [versioning-policy-v0.0.0.md](../governance/versioning-policy-v0.0.0.md)
 
@@ -20,7 +20,8 @@
 
 | Version | Tag | Commit | Release notes | Summary |
 |---------|-----|--------|---------------|---------|
-| **0.0.5** | `v0.0.5` | *(this release)* | [release-notes-v0.0.5.md](../releases/release-notes-v0.0.5.md) | Progressive social initiatives |
+| **0.0.6** | `v0.0.6` | *(this release)* | [release-notes-v0.0.6.md](../releases/release-notes-v0.0.6.md) | RMS Ltd. company-first branding |
+| **0.0.5** | `v0.0.5` | `af3a534` | [release-notes-v0.0.5.md](../releases/release-notes-v0.0.5.md) | Progressive social initiatives |
 | **0.0.4** | `v0.0.4` | `2193faa` | [release-notes-v0.0.4.md](../releases/release-notes-v0.0.4.md) | Hiring via progressive social programmes |
 | **0.0.3** | `v0.0.3` | `9b55012` | [release-notes-v0.0.3.md](../releases/release-notes-v0.0.3.md) | No Code Your Future on public site |
 | **0.0.2** | `v0.0.2` | `5b245b6` | [release-notes-v0.0.2.md](../releases/release-notes-v0.0.2.md) | SemVer docs, VERSION file, register |
