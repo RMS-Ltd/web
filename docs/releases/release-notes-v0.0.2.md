@@ -2,7 +2,7 @@
 
 ## Version 0.0.2
 
-**Tag:** `v0.0.2` · **Current**
+**Tag:** `v0.0.2`
 
 ---
 
@@ -19,4 +19,4 @@
 
 No HTML/CSS change in this release — documentation and tagging only.
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.3.md](./release-notes-v0.0.3.md).*

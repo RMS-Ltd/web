@@ -3,7 +3,7 @@
 Public cooperative landing page for **RMS Ltd.** — GitHub Pages.
 
 **Live:** https://rms-ltd.github.io/web/  
-**Current version:** `0.0.2` ([VERSION](./VERSION)) — see [docs/planning/CURRENT_RELEASE.md](docs/planning/CURRENT_RELEASE.md)
+**Current version:** `0.0.3` ([VERSION](./VERSION)) — see [docs/planning/CURRENT_RELEASE.md](docs/planning/CURRENT_RELEASE.md)
 
 **Source of truth (private):** [RMS-Ltd/enterprise](https://github.com/RMS-Ltd/enterprise) → `site/` — sync HTML/CSS here, then bump VERSION and release notes per [docs/governance/versioning-policy-v0.0.0.md](docs/governance/versioning-policy-v0.0.0.md).
 
