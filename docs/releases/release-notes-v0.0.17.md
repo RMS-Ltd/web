@@ -2,7 +2,7 @@
 
 ## Version 0.0.17
 
-**Tag:** `v0.0.17` · **Current**
+**Tag:** `v0.0.17`
 
 ---
 
@@ -13,4 +13,4 @@
 | **PATCH** | Theme: dark default; fix double-click (`onclick` + listener); remove system override. |
 | **PATCH** | RMS Compute environmentally aware USP (from v0.0.16, unreleased). |
 
-*Current release · [release-register-v0.0.0.md](../planning/release-register-v0.0.0.md)*
+*Superseded by [release-notes-v0.0.18.md](./release-notes-v0.0.18.md).*
