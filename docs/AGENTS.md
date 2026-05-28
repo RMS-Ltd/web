@@ -14,7 +14,7 @@ Public **RMS Ltd.** GitHub Pages site ([RMS-Ltd/web](https://github.com/RMS-Ltd/
 
 | Rule | Detail |
 |------|--------|
-| **Work on `dev`** | All routine site edits and pushes go to `dev` — no Pages deploy per push |
+| **Work on `dev`** | Default branch; all routine site edits and pushes go to `dev` — no Pages deploy per push |
 | **Merge to `main` when stable** | Only after local preview (`python3 -m http.server 8080`) |
 | **One deploy per release** | Push/tag on `main` after merge — not on every commit |
 | **Copy-then-edit** | Versioned `docs/**/*-v0.0.x.md` — never bump policy/release files in place |

@@ -80,11 +80,11 @@ Do not add `dev` (or `**`) to deploy triggers without a policy bump.
 
 ---
 
-## 5) GitHub repo settings (recommended)
+## 5) GitHub repo settings
 
 | Setting | Value |
 |---------|--------|
-| Default branch | **`dev`** (optional) — new clones and PRs target `dev` → `main` |
+| Default branch | **`dev`** — new clones and PRs target `dev` → `main` |
 | Branch protection on `main` | Require PR or review before merge (optional) |
 
 ---

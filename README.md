@@ -28,7 +28,7 @@ git push origin main
 git push origin v0.0.x
 ```
 
-Optional: set **default branch** to `dev` in GitHub **Settings → General** so new clones start on `dev`.
+**Default branch on GitHub:** `dev` (clones and PRs start here; merge to `main` to release).
 
 ---
 
