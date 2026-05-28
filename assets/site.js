@@ -1,5 +1,5 @@
 (function () {
-  var SITE_VERSION = '0.0.13';
+  var SITE_VERSION = '0.0.14';
   var year = document.getElementById('year');
   var version = document.getElementById('site-version');
   if (year) year.textContent = new Date().getFullYear();
